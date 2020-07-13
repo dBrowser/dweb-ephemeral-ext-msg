@@ -1,7 +1,7 @@
 {
-  "name": "@beaker/dat-ephemeral-ext-msg",
-  "version": "1.0.2",
-  "description": "Methods for implementing DEP-0000: Ephemeral Messages (Extension Message)",
+  "name": "dweb-ephemeral-ext-msg",
+  "version": "1.0.0",
+  "description": "dWeb ephemeral ext messaging library for dBrowser",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js",
@@ -27,9 +27,9 @@
     "protocol-buffers-encodings": "^1.1.0"
   },
   "devDependencies": {
-    "hypercore": "^6.24.0",
-    "hyperdb": "^3.5.0",
-    "hyperdrive": "^9.14.2",
+    "ddatabase": "^1.3.0",
+    "dappdb": "^1.0.0",
+    "dwebfs": "^1.1.0",
     "protocol-buffers": "^4.0.4",
     "random-access-memory": "^3.0.0",
     "tape": "^4.9.1"
