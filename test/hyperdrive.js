@@ -1,2 +1,2 @@
-var dat = require('hyperdrive')
+var dat = require('dwebfs')
 require('./common')(dat)

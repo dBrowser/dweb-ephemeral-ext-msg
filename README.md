@@ -3,7 +3,7 @@
 Methods for implementing ephemeral messages as extension messages over Dat. [Read the spec here.](./spec.md)
 
 ```js
-const {DatEphemeralExtMsg} = require('@beaker/dat-ephemeral-ext-msg')
+const {DatEphemeralExtMsg} = require('dweb-epemeral-ext-msg')
 var datEphemeralExtMsg = new DatEphemeralExtMsg()
 
 /**
@@ -23,7 +23,7 @@ var mySwarm = discoverySwarm(swarmDefaults({
 /**
  * Step 2. Wire up each dat you create
  */
-datEphemeralExtMsg.watchDat(dat) // can pass a hypercore, hyperdb, or hyperdrive reference as the dat
+datEphemeralExtMsg.watchDat(dat) // can pass a ddatabase, hyperdb, or dwebfs reference as the dat
 // datEphemeralExtMsg.unwatchDat(dat) when done
 
 /**

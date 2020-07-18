@@ -1,5 +1,5 @@
 // Common tests that are run once for
-// hypercore, hyperdb, and hyperdrive.
+// ddatabase, hyperdb, and dwebfs.
 
 var tape = require('tape')
 var ram = require('random-access-memory')
@@ -12,7 +12,7 @@ module.exports = function (dat) {
   var isHyperDB = dat.name === 'HyperDB'
   var isHyperdrive = dat.name === 'Hyperdrive'
 
-  var datNames = {Feed: 'hypercore', HyperDB: 'hyperdb', Hyperdrive: 'hyperdrive'}
+  var datNames = {Feed: 'ddatabase', HyperDB: 'hyperdb', Hyperdrive: 'dwebfs'}
   var datName = datNames[dat.name]
 
   tape(`exchange ephemeral messages: ${datName}`, function (t) {
@@ -27,7 +27,7 @@ module.exports = function (dat) {
 
     var self = this
 
-    // Isomorphic interface to support hypercore, hyperdb, and hyperdrive.
+    // Isomorphic interface to support ddatabase, hyperdb, and dwebfs.
     // The three packages have slightly different APIs that makes this necessary.
     // TODO: open issue for unifying the interfaces.
     var srcFeed = src.source || src.metadata || src
